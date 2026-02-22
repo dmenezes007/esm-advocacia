@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { Mail, MessageCircle, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 import { brandLogo } from "@/assets/brand";
 
@@ -23,9 +22,6 @@ const Footer = () => {
               <a href="#" className="hover:text-[#f5af00] transition-colors"><Twitter className="h-5 w-5" /></a>
               <a href="#" className="hover:text-[#f5af00] transition-colors"><Facebook className="h-5 w-5" /></a>
               <a href="#" className="hover:text-[#f5af00] transition-colors"><Instagram className="h-5 w-5" /></a>
-              <li>
-                <Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito Digital</Link>
-              </li>
             </div>
           </div>
 
@@ -41,6 +37,7 @@ const Footer = () => {
               <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito Trabalhista</Link></li>
               <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito de Telefonia</Link></li>
               <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito Bancário</Link></li>
+              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito Digital</Link></li>
             </ul>
           </div>
 
@@ -63,15 +60,19 @@ const Footer = () => {
             <ul className="space-y-4 text-sm">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#f5af00] shrink-0" />
-                  <span>Rua Mapendi, 144, bl. 4, sl. 304, taquara, Rio de Janeiro - RJ</span>
+                <span>
+                  Rua Mapendi, 144, bl. 4, sl. 304
+                  <br />
+                  Taquara, Rio de Janeiro - RJ
+                </span>
               </li>
               <li className="flex items-center gap-3">
-                  <MessageCircle className="h-5 w-5 text-[#25D366] shrink-0" />
-                  <span>+55 (21) 98112-5585</span>
+                <MessageCircle className="h-5 w-5 text-[#f5af00] shrink-0" />
+                <span>+55 (21) 98112-5585</span>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-[#f5af00] shrink-0" />
-                  <span>davison.menezes@gmail.com</span>
+                <span>davison.menezes@gmail.com</span>
               </li>
             </ul>
           </div>
