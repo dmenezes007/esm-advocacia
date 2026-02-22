@@ -7,9 +7,9 @@ const Home = () => {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative bg-[#091f1a] text-[#ffffff] py-24 lg:py-32 overflow-hidden">
+      <section className="relative bg-[#091f1a] bg-emerald-motion text-[#ffffff] py-24 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#091f1a]/80 to-[#091f1a]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#091f1a]/80 via-[#0b8767]/20 to-[#091f1a]"></div>
         
         <div className="container relative mx-auto px-4 md:px-6 z-10">
           <div className="max-w-3xl space-y-6">
@@ -196,7 +196,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-[#091f1a] text-[#ffffff]">
+      <section className="py-20 bg-[#091f1a] bg-emerald-motion text-[#ffffff]">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Pronto para proteger seus interesses?</h2>
           <p className="text-[#ffffff]/80 text-lg max-w-2xl mx-auto mb-10">

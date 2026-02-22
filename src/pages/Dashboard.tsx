@@ -38,7 +38,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen bg-[#ffffff] flex">
       {/* Sidebar */}
-      <aside className="w-64 bg-[#091f1a] text-[#ffffff]/80 hidden md:flex flex-col fixed h-full">
+      <aside className="w-64 bg-[#091f1a] bg-emerald-motion text-[#ffffff]/80 hidden md:flex flex-col fixed h-full">
         <div className="p-6 border-b border-[#ffffff]/20">
           <Link to="/" className="flex items-center gap-2 text-white font-bold text-xl">
             <img src={brandLogo} alt="Logo ESM Advocacia Especializada" className="h-9 w-9 rounded-md object-cover border border-[#ffffff]/30" />

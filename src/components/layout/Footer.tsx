@@ -4,7 +4,7 @@ import { brandLogo } from "@/assets/brand";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#091f1a] text-[#ffffff]/80 py-12 md:py-16">
+    <footer className="bg-[#091f1a] bg-emerald-motion text-[#ffffff]/80 py-12 md:py-16">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
