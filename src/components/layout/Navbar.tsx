@@ -9,6 +9,8 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const isHome = location.pathname === "/";
+  const solidHeader = scrolled || !isHome;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +37,7 @@ const Navbar = () => {
     <nav
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
-        scrolled
+        solidHeader
           ? "bg-[#ffffff]/95 backdrop-blur-md border-b border-[#091f1a]/20 py-3 shadow-sm"
           : "bg-transparent py-5"
       )}
@@ -44,8 +46,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img src={brandLogo} alt="Logo ESM Advocacia Especializada" className="h-10 w-10 rounded-md object-cover border border-[#ffffff]/30" />
-            <span className={cn("text-xl font-bold tracking-tight font-brand", scrolled ? "text-[#091f1a]" : "text-[#ffffff]")}>
+            <img src={brandLogo} alt="Logo ESM Advocacia Especializada" className={cn("h-10 w-10 rounded-md object-cover", solidHeader ? "border border-[#091f1a]/20" : "border border-[#ffffff]/30")} />
+            <span className={cn("text-xl font-bold tracking-tight font-brand", solidHeader ? "text-[#091f1a]" : "text-[#ffffff]")}>
               ESM Advocacia Especializada
             </span>
           </Link>
@@ -60,7 +62,7 @@ const Navbar = () => {
                   "text-sm font-medium transition-colors hover:text-[#f5af00]",
                   location.pathname === link.path
                     ? "text-[#f5af00]"
-                    : scrolled
+                    : solidHeader
                       ? "text-[#091f1a]/75"
                       : "text-[#ffffff]"
                 )}
@@ -73,7 +75,7 @@ const Navbar = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
             <Link to="/dashboard">
-              <Button variant="ghost" size="sm" className={cn(scrolled ? "text-[#091f1a]" : "text-[#ffffff] hover:text-[#f5af00]")}>
+              <Button variant="ghost" size="sm" className={cn(solidHeader ? "text-[#091f1a]" : "text-[#ffffff] hover:text-[#f5af00]")}>
                 Portal do Cliente
               </Button>
             </Link>
@@ -86,7 +88,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className={cn("md:hidden p-2", scrolled ? "text-[#091f1a]" : "text-[#ffffff]")}
+            className={cn("md:hidden p-2", solidHeader ? "text-[#091f1a]" : "text-[#ffffff]")}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X /> : <Menu />}

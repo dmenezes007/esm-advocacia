@@ -13,11 +13,12 @@ import Contact from "@/pages/Contact";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   const isDashboard = location.pathname.startsWith("/dashboard");
+  const isHome = location.pathname === "/";
 
   return (
     <div className="flex flex-col min-h-screen antialiased text-[#091f1a] bg-[#ffffff]">
       {!isDashboard && <Navbar />}
-      <main className="flex-grow">{children}</main>
+      <main className={isDashboard || isHome ? "flex-grow" : "flex-grow pt-24 md:pt-28"}>{children}</main>
       {!isDashboard && <Footer />}
     </div>
   );
