@@ -89,6 +89,10 @@ body {
   font-weight: 700;
 }
 
+.logo-transparent-border {
+  border-color: transparent !important;
+}
+
 h1,
 h2,
 h3,

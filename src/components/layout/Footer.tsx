@@ -10,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 text-white">
-              <img src={brandLogo} alt="Logo ESM Advocacia Especializada" className="h-10 w-10 rounded-md object-cover border border-[#ffffff]/30" />
+              <img src={brandLogo} alt="Logo ESM Advocacia Especializada" className="h-10 w-10 rounded-md object-cover border border-[#ffffff]/30 logo-transparent-border" />
               <span className="text-xl font-bold tracking-tight font-brand">ESM Advocacia Especializada</span>
             </div>
             <p className="text-sm text-[#ffffff]/70 leading-relaxed">

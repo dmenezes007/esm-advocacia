@@ -46,7 +46,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img src={brandLogo} alt="Logo ESM Advocacia Especializada" className={cn("h-10 w-10 rounded-md object-cover", solidHeader ? "border border-[#091f1a]/20" : "border border-[#ffffff]/30")} />
+            <img src={brandLogo} alt="Logo ESM Advocacia Especializada" className={cn("h-10 w-10 rounded-md object-cover logo-transparent-border", solidHeader ? "border border-[#091f1a]/20" : "border border-[#ffffff]/30")} />
             <span className={cn("text-xl font-bold tracking-tight font-brand", solidHeader ? "text-[#091f1a]" : "text-[#ffffff]")}>
               ESM Advocacia Especializada
             </span>
