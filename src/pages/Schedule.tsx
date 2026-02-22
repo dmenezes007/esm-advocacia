@@ -25,6 +25,7 @@ const practiceAreas = [
   { id: "trabalho", name: "Direito Trabalhista", services: ["Consulta", "Análise de Verbas", "Estratégia Processual"] },
   { id: "telefonia", name: "Direito de Telefonia", services: ["Consulta", "Revisão de Cobranças", "Ação de Reparação"] },
   { id: "bancario", name: "Direito Bancário", services: ["Consulta", "Revisão Contratual", "Negociação e Defesa"] },
+  { id: "digital", name: "Direito Digital", services: ["Consulta", "Diagnóstico de LGPD", "Estratégia de Proteção de Dados"] },
 ];
 
 const professionals = [

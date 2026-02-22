@@ -63,6 +63,13 @@ const practiceAreas = [
     description: "Atuação em contratos bancários, juros abusivos, fraudes e revisão de dívidas.",
     services: ["Revisão de Contratos", "Fraudes Bancárias", "Renegociação de Dívidas"],
   },
+  {
+    id: 9,
+    title: "Direito Digital",
+    category: "Direito Digital",
+    description: "Assessoria em LGPD, contratos digitais, responsabilidade civil online e proteção de dados.",
+    services: ["Adequação à LGPD", "Contratos Digitais", "Responsabilidade em Ambiente Online"],
+  },
 ];
 
 const categories = [
@@ -74,7 +81,8 @@ const categories = [
   "Direito de Sucessões",
   "Direito Trabalhista",
   "Direito de Telefonia",
-  "Direito Bancário"
+  "Direito Bancário",
+  "Direito Digital"
 ];
 
 const PracticeAreas = () => {

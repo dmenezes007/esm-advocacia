@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, CheckCircle2, Scale, Shield, Clock, Users, Star, ChevronRight } from "lucide-react";
+import { ArrowRight, CheckCircle2, Shield, Clock, Users, Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 
@@ -18,11 +18,11 @@ const Home = () => {
               Soluções Jurídicas Estratégicas para a Nova Economia
             </div>
             <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-              Defesa dos seus direitos com <span className="text-[#f5af00]">precisão</span> e <span className="text-[#f5af00]">integridade</span>
+              Defesa dos seus direitos com <span className="text-[#f5af00]">precisão jurídica</span> e <span className="text-[#f5af00]">integridade</span>
             </h1>
             <p className="text-lg md:text-xl text-[#ffffff]/80 max-w-2xl leading-relaxed">
               A ESM Advocacia Especializada combina excelência técnica e tecnologia para oferecer
-              soluções jurídicas claras, ágeis e orientadas a resultado para empresas e pessoas.
+              soluções jurídicas claras, ágeis e orientadas a resultado para pessoas e empresas.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <Link to="/schedule">
@@ -59,9 +59,9 @@ const Home = () => {
       <section className="py-20 bg-[#ffffff]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-[#091f1a] sm:text-4xl">Por que empresas confiam na ESM</h2>
+            <h2 className="text-3xl font-bold tracking-tight text-[#091f1a] sm:text-4xl">Por que nossos clientes confiam na ESM?</h2>
             <p className="mt-4 text-lg text-[#091f1a]/75">
-              Nosso modelo de trabalho une estratégia jurídica, comunicação clara e foco em resultado.
+              Nosso modelo de trabalho une estratégia jurídica, workflows estrturados, comunicação clara e foco em resultado.
             </p>
           </div>
 
@@ -69,7 +69,7 @@ const Home = () => {
             {[
               {
                 icon: Shield,
-                title: "Proteção Jurídica Sólida",
+                title: "Proteção Jurídica Consistente",
                 desc: "Estratégias de defesa personalizadas conforme os riscos e objetivos do seu caso."
               },
               {
@@ -79,7 +79,7 @@ const Home = () => {
               },
               {
                 icon: Users,
-                title: "Atendimento Próximo",
+                title: "Atendimento Humanizado",
                 desc: "Acompanhamento contínuo com equipe experiente e informações centralizadas no portal."
               }
             ].map((feature, idx) => (
@@ -114,27 +114,53 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
-              "Direito Imobiliário",
-              "Direito da Saúde",
-              "Direito do Passageiro Aéreo",
-              "Direito de Família",
-              "Direito de Sucessões",
-              "Direito Trabalhista",
-              "Direito de Telefonia",
-              "Direito Bancário"
-            ].map((area, i) => (
+              {
+                area: "Direito Imobiliário",
+                desc: "Assessoria especializada para compra, venda, locação, regularização e disputas imobiliárias."
+              },
+              {
+                area: "Direito da Saúde",
+                desc: "Atuação estratégica em negativas de plano de saúde, tratamentos, cirurgias e medicamentos."
+              },
+              {
+                area: "Direito do Passageiro Aéreo",
+                desc: "Defesa eficiente em atrasos, cancelamentos, overbooking, extravio e demais falhas de voo."
+              },
+              {
+                area: "Direito de Família",
+                desc: "Condução técnica e humanizada em divórcio, guarda, pensão e organização familiar."
+              },
+              {
+                area: "Direito de Sucessões",
+                desc: "Planejamento sucessório e inventários com segurança jurídica, celeridade e previsibilidade."
+              },
+              {
+                area: "Direito Trabalhista",
+                desc: "Atuação sólida em conflitos trabalhistas, verbas rescisórias e prevenção de passivos."
+              },
+              {
+                area: "Direito de Telefonia",
+                desc: "Proteção contra cobranças indevidas, serviços não contratados e falhas das operadoras."
+              },
+              {
+                area: "Direito Bancário",
+                desc: "Assessoria em revisão contratual, fraudes bancárias e negociação de dívidas complexas."
+              },
+              {
+                area: "Direito Digital",
+                desc: "Suporte em LGPD, contratos digitais, responsabilidade online e segurança de dados."
+              }
+            ].map((item, i) => (
               <Link key={i} to="/practice-areas" className="group">
                 <Card className="h-full hover:border-[#f5af00]/50 hover:shadow-md transition-all duration-200">
                   <CardHeader>
                     <CardTitle className="flex items-center justify-between">
-                      {area}
+                      {item.area}
                       <ArrowRight className="h-4 w-4 text-[#091f1a]/40 group-hover:text-[#f5af00] transition-colors" />
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <p className="text-sm text-[#091f1a]/65">
-                      Assessoria especializada em {area.toLowerCase()}, com estratégia, segurança e previsibilidade.
-                    </p>
+                    <p className="text-sm text-[#091f1a]/65">{item.desc}</p>
                   </CardContent>
                 </Card>
               </Link>
@@ -166,9 +192,24 @@ const Home = () => {
                 role: "Empresária do Setor Imobiliário"
               },
               {
-                quote: "A equipe de direito digital protegeu nossa marca em um momento crítico.",
+                quote: "A equipe de direito digital garantiu a adequação do nosso modelo de negócio à LGPD em um momento crítico.",
                 author: "Tiago Martins",
                 role: "Fundador, Estúdio Criativo"
+              },
+              {
+                quote: "Conseguimos reverter a negativa do plano de saúde em tempo recorde e com total suporte jurídico.",
+                author: "Mariana Costa",
+                role: "Médica, Cliente de Direito da Saúde"
+              },
+              {
+                quote: "Após o cancelamento do voo, a atuação da equipe foi decisiva para garantir nossa indenização.",
+                author: "Carlos Nogueira",
+                role: "Cliente de Direito do Passageiro Aéreo"
+              },
+              {
+                quote: "No inventário da nossa família, tivemos orientação clara, segurança e resolução sem conflitos.",
+                author: "Fernanda Ribeiro",
+                role: "Cliente de Direito de Sucessões"
               }
             ].map((t, i) => (
               <Card key={i} className="bg-[#ffffff] border-[#091f1a]/10">
