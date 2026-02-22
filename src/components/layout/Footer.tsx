@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import { brandLogo } from "@/assets/brand";
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2 text-white">
-              <img src="/logo.png" alt="Logo ESM Advocacia Especializada" className="h-10 w-10 rounded-md object-cover border border-[#ffffff]/30" />
+              <img src={brandLogo} alt="Logo ESM Advocacia Especializada" className="h-10 w-10 rounded-md object-cover border border-[#ffffff]/30" />
               <span className="text-xl font-bold tracking-tight font-brand">ESM Advocacia Especializada</span>
             </div>
             <p className="text-sm text-[#ffffff]/70 leading-relaxed">
@@ -28,12 +29,14 @@ const Footer = () => {
           <div>
             <h3 className="text-white font-semibold mb-4">Áreas de Atuação</h3>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito Empresarial</Link></li>
-              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Contencioso Cível</Link></li>
-              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito Digital</Link></li>
-              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Propriedade Intelectual</Link></li>
               <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito Imobiliário</Link></li>
-              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Consultoria Tributária</Link></li>
+              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito da Saúde</Link></li>
+              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito do Passageiro Aéreo</Link></li>
+              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito de Família</Link></li>
+              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito de Sucessões</Link></li>
+              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito Trabalhista</Link></li>
+              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito de Telefonia</Link></li>
+              <li><Link to="/practice-areas" className="hover:text-[#f5af00] transition-colors">Direito Bancário</Link></li>
             </ul>
           </div>
 

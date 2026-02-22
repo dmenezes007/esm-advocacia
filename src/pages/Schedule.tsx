@@ -17,17 +17,21 @@ const steps = [
 ];
 
 const practiceAreas = [
-  { id: "corp", name: "Direito Empresarial", services: ["Consulta", "Revisão Contratual", "Constituição Societária"] },
-  { id: "civil", name: "Contencioso Cível", services: ["Análise do Caso", "Mediação", "Representação"] },
-  { id: "ip", name: "Propriedade Intelectual", services: ["Busca de Marca", "Depósito de Patente", "Auditoria de PI"] },
-  { id: "real", name: "Direito Imobiliário", services: ["Fechamento", "Revisão de Locação", "Conflito Imobiliário"] },
+  { id: "imob", name: "Direito Imobiliário", services: ["Consulta", "Análise Contratual", "Estratégia do Caso"] },
+  { id: "saude", name: "Direito da Saúde", services: ["Consulta", "Análise de Negativa", "Medida de Urgência"] },
+  { id: "aereo", name: "Direito do Passageiro Aéreo", services: ["Consulta", "Avaliação de Danos", "Ação Indenizatória"] },
+  { id: "familia", name: "Direito de Família", services: ["Consulta", "Acordo Familiar", "Ação Judicial"] },
+  { id: "sucessoes", name: "Direito de Sucessões", services: ["Consulta", "Inventário", "Partilha"] },
+  { id: "trabalho", name: "Direito Trabalhista", services: ["Consulta", "Análise de Verbas", "Estratégia Processual"] },
+  { id: "telefonia", name: "Direito de Telefonia", services: ["Consulta", "Revisão de Cobranças", "Ação de Reparação"] },
+  { id: "bancario", name: "Direito Bancário", services: ["Consulta", "Revisão Contratual", "Negociação e Defesa"] },
 ];
 
 const professionals = [
-  { id: 1, name: "Sofia Mendes", role: "Sócia Sênior", specialty: "Direito Empresarial", image: "https://i.pravatar.cc/150?u=1" },
-  { id: 2, name: "Ricardo Alves", role: "Associado", specialty: "Contencioso Cível", image: "https://i.pravatar.cc/150?u=2" },
-  { id: 3, name: "Camila Duarte", role: "Sócia", specialty: "Propriedade Intelectual", image: "https://i.pravatar.cc/150?u=3" },
-  { id: 4, name: "Bruno Farias", role: "Associado Sênior", specialty: "Direito Imobiliário", image: "https://i.pravatar.cc/150?u=4" },
+  { id: 1, name: "Sofia Mendes", role: "Sócia Sênior", specialty: "Direito Imobiliário", image: "https://i.pravatar.cc/150?u=1" },
+  { id: 2, name: "Ricardo Alves", role: "Associado", specialty: "Direito da Saúde", image: "https://i.pravatar.cc/150?u=2" },
+  { id: 3, name: "Camila Duarte", role: "Sócia", specialty: "Direito do Passageiro Aéreo", image: "https://i.pravatar.cc/150?u=3" },
+  { id: 4, name: "Bruno Farias", role: "Associado Sênior", specialty: "Direito Trabalhista", image: "https://i.pravatar.cc/150?u=4" },
 ];
 
 const timeSlots = [

@@ -113,7 +113,16 @@ const Home = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {["Direito Empresarial", "Propriedade Intelectual", "Contencioso Cível", "Direito Imobiliário", "Direito Tributário", "Direito Digital"].map((area, i) => (
+            {[
+              "Direito Imobiliário",
+              "Direito da Saúde",
+              "Direito do Passageiro Aéreo",
+              "Direito de Família",
+              "Direito de Sucessões",
+              "Direito Trabalhista",
+              "Direito de Telefonia",
+              "Direito Bancário"
+            ].map((area, i) => (
               <Link key={i} to="/practice-areas" className="group">
                 <Card className="h-full hover:border-[#f5af00]/50 hover:shadow-md transition-all duration-200">
                   <CardHeader>

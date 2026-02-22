@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { brandLogo } from "@/assets/brand";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
@@ -43,8 +44,8 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <img src="/logo.png" alt="Logo ESM Advocacia Especializada" className="h-10 w-10 rounded-md object-cover border border-[#091f1a]/20" />
-            <span className={cn("text-xl font-bold tracking-tight font-brand", scrolled ? "text-[#091f1a]" : "text-[#091f1a]")}>
+            <img src={brandLogo} alt="Logo ESM Advocacia Especializada" className="h-10 w-10 rounded-md object-cover border border-[#ffffff]/30" />
+            <span className={cn("text-xl font-bold tracking-tight font-brand", scrolled ? "text-[#091f1a]" : "text-[#ffffff]")}>
               ESM Advocacia Especializada
             </span>
           </Link>
@@ -59,7 +60,9 @@ const Navbar = () => {
                   "text-sm font-medium transition-colors hover:text-[#f5af00]",
                   location.pathname === link.path
                     ? "text-[#f5af00]"
-                    : "text-[#091f1a]/75"
+                    : scrolled
+                      ? "text-[#091f1a]/75"
+                      : "text-[#ffffff]"
                 )}
               >
                 {link.name}
@@ -70,7 +73,7 @@ const Navbar = () => {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
             <Link to="/dashboard">
-              <Button variant="ghost" size="sm" className="text-[#091f1a]">
+              <Button variant="ghost" size="sm" className={cn(scrolled ? "text-[#091f1a]" : "text-[#ffffff] hover:text-[#f5af00]")}>
                 Portal do Cliente
               </Button>
             </Link>
@@ -83,7 +86,7 @@ const Navbar = () => {
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden p-2 text-[#091f1a]"
+            className={cn("md:hidden p-2", scrolled ? "text-[#091f1a]" : "text-[#ffffff]")}
             onClick={() => setIsOpen(!isOpen)}
           >
             {isOpen ? <X /> : <Menu />}

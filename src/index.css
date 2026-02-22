@@ -1,3 +1,4 @@
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700,900&display=swap");
 @import "tailwindcss";
 
 :root {
@@ -15,12 +16,11 @@ body,
 body {
   background-color: var(--esm-white);
   color: var(--esm-dark);
-  font-family: "Oswald", sans-serif;
+  font-family: "Satoshi", sans-serif;
 }
 
 .font-brand {
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
+  font-family: "Satoshi", sans-serif;
   font-weight: 700;
 }
 
@@ -30,8 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Cormorant Garamond", serif;
-  font-style: italic;
+  font-family: "Satoshi", sans-serif;
   font-weight: 700;
 }
 

@@ -1,71 +1,81 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Search, Filter, ArrowRight } from "lucide-react";
+import { Search, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge"; // I need to create Badge component
+import { Badge } from "@/components/ui/badge";
 
 const practiceAreas = [
   {
     id: 1,
-    title: "Direito Empresarial",
-    category: "Empresarial",
-    description: "Assessoria completa para empresas, da constituição a operações estratégicas.",
-    services: ["Constituição Societária", "Revisão Contratual", "M&A", "Compliance"],
+    title: "Direito Imobiliário",
+    category: "Direito Imobiliário",
+    description: "Atuação em compra, venda, locação, distratos e conflitos possessórios.",
+    services: ["Contratos Imobiliários", "Usucapião", "Regularização de Imóveis"],
   },
   {
     id: 2,
-    title: "Contencioso Cível",
-    category: "Contencioso",
-    description: "Representação em disputas cíveis complexas e processos judiciais.",
-    services: ["Resolução de Conflitos", "Arbitragem", "Atuação Processual"],
+    title: "Direito da Saúde",
+    category: "Direito da Saúde",
+    description: "Defesa de direitos em planos de saúde, tratamentos e medicamentos.",
+    services: ["Negativa de Cobertura", "Reembolsos", "Ações de Urgência"],
   },
   {
     id: 3,
-    title: "Propriedade Intelectual",
-    category: "Empresarial",
-    description: "Proteção de ativos criativos, marcas, patentes e direitos autorais.",
-    services: ["Registro de Marca", "Depósito de Patente", "Litígios em PI"],
+    title: "Direito do Passageiro Aéreo",
+    category: "Direito do Passageiro Aéreo",
+    description: "Atuação em atraso, cancelamento, overbooking, extravio e danos ao passageiro.",
+    services: ["Indenizações", "Reacomodação", "Danos Morais e Materiais"],
   },
   {
     id: 4,
-    title: "Direito Imobiliário",
-    category: "Imobiliário",
-    description: "Suporte jurídico em negociações imobiliárias e conflitos patrimoniais.",
-    services: ["Fechamento de Negócios", "Contratos de Locação", "Questões Urbanísticas"],
+    title: "Direito de Família",
+    category: "Direito de Família",
+    description: "Soluções para divórcio, guarda, alimentos e regulamentação de convivência.",
+    services: ["Divórcio", "Guarda e Visitas", "Pensão Alimentícia"],
   },
   {
     id: 5,
-    title: "Direito de Família",
-    category: "Pessoal",
-    description: "Atuação técnica e sensível em divórcio, guarda e temas familiares.",
-    services: ["Divórcio", "Guarda", "Pacto Antenupcial"],
+    title: "Direito de Sucessões",
+    category: "Direito de Sucessões",
+    description: "Planejamento sucessório, inventários e partilhas judiciais e extrajudiciais.",
+    services: ["Inventário", "Partilha", "Planejamento Sucessório"],
   },
   {
     id: 6,
-    title: "Direito Tributário",
-    category: "Financeiro",
-    description: "Planejamento tributário e defesa administrativa/judicial para pessoas e empresas.",
-    services: ["Planejamento Tributário", "Defesa em Fiscalização", "Tributação Internacional"],
+    title: "Direito Trabalhista",
+    category: "Direito Trabalhista",
+    description: "Atuação para trabalhadores e empregadores em litígios e prevenção de riscos.",
+    services: ["Rescisões", "Reclamações Trabalhistas", "Acordos"],
   },
   {
     id: 7,
-    title: "Direito do Trabalho",
-    category: "Empresarial",
-    description: "Consultoria preventiva e contenciosa para relações trabalhistas.",
-    services: ["Contratos", "Defesa em Reclamações", "Compliance Trabalhista"],
+    title: "Direito de Telefonia",
+    category: "Direito de Telefonia",
+    description: "Defesa em cobranças indevidas, serviços não contratados e má prestação.",
+    services: ["Cancelamento Indevido", "Cobranças Abusivas", "Indenizações"],
   },
   {
     id: 8,
-    title: "Direito Digital",
-    category: "Tecnologia",
-    description: "Assessoria em internet, privacidade, proteção de dados e segurança da informação.",
-    services: ["Privacidade de Dados", "Cibersegurança", "Responsabilidade Online"],
+    title: "Direito Bancário",
+    category: "Direito Bancário",
+    description: "Atuação em contratos bancários, juros abusivos, fraudes e revisão de dívidas.",
+    services: ["Revisão de Contratos", "Fraudes Bancárias", "Renegociação de Dívidas"],
   },
 ];
 
-const categories = ["Todas", "Empresarial", "Contencioso", "Imobiliário", "Pessoal", "Financeiro", "Tecnologia"];
+const categories = [
+  "Todas",
+  "Direito Imobiliário",
+  "Direito da Saúde",
+  "Direito do Passageiro Aéreo",
+  "Direito de Família",
+  "Direito de Sucessões",
+  "Direito Trabalhista",
+  "Direito de Telefonia",
+  "Direito Bancário"
+];
 
 const PracticeAreas = () => {
   const [selectedCategory, setSelectedCategory] = useState("Todas");
