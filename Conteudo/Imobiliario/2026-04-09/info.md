@@ -1,4 +1,6 @@
-# Infoproduto 01 — Hotmart
+# Infoproduto Principal — Hotmart
+
+> Este é o **material complementar principal** do artigo de Direito Imobiliário publicado em `2026-04-09`, estruturado como um **checklist prático do comprador de imóvel na planta**.
 
 ## b.1. Identificação do Produto
 **eBook** — Arquivos em `.pdf` ou `ePub` para ler online ou baixar.
@@ -25,7 +27,7 @@ A proposta é transformar um tema técnico em um material acessível, aplicável
 ## Promessa principal
 Entregar ao comprador uma visão clara dos pontos críticos que merecem atenção antes de aceitar atraso, renegociação ou rescisão, ajudando-o a agir com mais segurança e menos improviso.
 
-## Estrutura sugerida do eBook
+## Estrutura do eBook / Checklist
 1. Como ler o contrato sem se perder no juridiquês
 2. Prazo de entrega e prazo de tolerância
 3. O que observar em caso de atraso da obra
