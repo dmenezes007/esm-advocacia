@@ -80,7 +80,7 @@ const Home = () => {
             {[
               {
                 icon: Shield,
-                title: "Proteção Jurídica Consistente",
+                title: "Desempenho Consistente",
                 desc: "Estratégias de defesa personalizadas conforme os riscos e objetivos do seu caso."
               },
               {
