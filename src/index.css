@@ -104,6 +104,10 @@ h6 {
 }
 
 @layer utilities {
+  .bg-\[\#f5af00\]\/20 {
+    background-color: #f5af00;
+  }
+
   .animate-in {
     animation-duration: 0.2s;
     animation-timing-function: ease-out;
