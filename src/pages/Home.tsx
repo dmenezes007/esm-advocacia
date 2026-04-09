@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, CheckCircle2, Shield, Clock, Users, Star, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import logo3d from "../../logo-3d.png";
 
 const Home = () => {
   return (
@@ -11,44 +12,58 @@ const Home = () => {
         <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80')] bg-cover bg-center opacity-10"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-[#091f1a]/80 via-[#0b8767]/20 to-[#091f1a]"></div>
         
-        <div className="container relative mx-auto px-4 md:px-6 z-10">
-          <div className="max-w-3xl space-y-6">
-            <div className="inline-flex items-center rounded-full border border-[#f5af00]/40 bg-[#f5af00]/15 px-3 py-1 text-sm font-medium text-[#f5af00] backdrop-blur-sm">
-              <span className="flex h-2 w-2 rounded-full bg-[#f5af00] mr-2"></span>
-              Soluções Jurídicas Estratégicas para a Nova Economia
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-tight">
-              Defesa dos seus direitos com <span className="text-[#f5af00]">precisão jurídica</span> e <span className="text-[#f5af00]">integridade</span>
-            </h1>
-            <p className="text-lg md:text-xl text-[#ffffff]/80 max-w-2xl leading-relaxed">
-              A ESM Advocacia Especializada combina excelência técnica e tecnologia para oferecer
-              soluções jurídicas claras, ágeis e orientadas a resultado para pessoas e empresas.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Link to="/schedule">
-                <Button size="lg" className="w-full sm:w-auto bg-[#f5af00] hover:bg-[#d99a00] text-[#091f1a] border-0">
-                  Agendar Consulta <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </Link>
-              <Link to="/contact">
-                <Button variant="outline" size="lg" className="w-full sm:w-auto border-[#ffffff]/35 text-[#ffffff] hover:bg-[#ffffff]/10 hover:text-[#ffffff] bg-transparent">
-                  Falar com Especialista
-                </Button>
-              </Link>
-            </div>
-            
-            <div className="pt-8 flex items-center gap-8 text-[#ffffff]/75 text-sm font-medium">
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 text-[#f5af00]" />
-                <span>Atendimento Especializado</span>
+        <div className="container relative z-10 mx-auto px-4 md:px-6">
+          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] lg:gap-14">
+            <div className="max-w-3xl space-y-6">
+              <div className="inline-flex items-center rounded-full border border-[#f5af00]/40 bg-[#f5af00]/15 px-3 py-1 text-sm font-medium text-[#f5af00] backdrop-blur-sm">
+                <span className="mr-2 flex h-2 w-2 rounded-full bg-[#f5af00]"></span>
+                Soluções Jurídicas Estratégicas para a Nova Economia
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 text-[#f5af00]" />
-                <span>Atuação Nacional</span>
+              <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-6xl">
+                Defesa dos seus direitos com <span className="text-[#f5af00]">precisão jurídica</span> e <span className="text-[#f5af00]">integridade</span>
+              </h1>
+              <p className="max-w-2xl text-lg leading-relaxed text-[#ffffff]/80 md:text-xl">
+                A ESM Advocacia Especializada combina excelência técnica e tecnologia para oferecer
+                soluções jurídicas claras, ágeis e orientadas a resultado para pessoas e empresas.
+              </p>
+              <div className="flex flex-col gap-4 pt-4 sm:flex-row">
+                <Link to="/schedule">
+                  <Button size="lg" className="w-full border-0 bg-[#f5af00] text-[#091f1a] hover:bg-[#d99a00] sm:w-auto">
+                    Agendar Consulta <ArrowRight className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+                <Link to="/contact">
+                  <Button variant="outline" size="lg" className="w-full border-[#ffffff]/35 bg-transparent text-[#ffffff] hover:bg-[#ffffff]/10 hover:text-[#ffffff] sm:w-auto">
+                    Falar com Especialista
+                  </Button>
+                </Link>
               </div>
-              <div className="flex items-center gap-2">
-                <CheckCircle2 className="h-4 w-4 text-[#f5af00]" />
-                <span>Portal do Cliente</span>
+
+              <div className="flex flex-wrap items-center gap-6 pt-8 text-sm font-medium text-[#ffffff]/75 lg:gap-8">
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#f5af00]" />
+                  <span>Atendimento Especializado</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#f5af00]" />
+                  <span>Atuação Nacional</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <CheckCircle2 className="h-4 w-4 text-[#f5af00]" />
+                  <span>Portal do Cliente</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="mx-auto w-full max-w-xl lg:mx-0 lg:justify-self-end">
+              <div className="relative overflow-hidden rounded-[2rem] border border-[#ffffff]/10 bg-[#0b241e]/65 p-5 shadow-[0_25px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm sm:p-8">
+                <div className="absolute inset-0 bg-gradient-to-br from-[#f5af00]/10 via-transparent to-[#0b8767]/20"></div>
+                <div className="absolute inset-6 rounded-[1.5rem] border border-[#f5af00]/15"></div>
+                <img
+                  src={logo3d}
+                  alt="Logomarca 3D da ESM Advocacia Especializada"
+                  className="relative z-10 mx-auto w-full max-w-md object-contain drop-shadow-[0_25px_60px_rgba(245,175,0,0.28)]"
+                />
               </div>
             </div>
           </div>
