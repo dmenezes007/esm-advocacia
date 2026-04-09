@@ -83,27 +83,43 @@ Regras do artigo:
 - encerrar com CTA para consulta, material rico ou infoproduto.
 
 ### Etapa 3 — Transformação em carrossel do Instagram
-A partir do artigo, crie um carrossel com base em [carousel-template](./assets/carousel-template.md).
+A partir do artigo, crie um carrossel com base em [carousel-template](./assets/carousel-template.md) e salve o material em `slides.md`.
+
+Regras obrigatórias do `slides.md`:
+- o arquivo deve conter **sempre 11 slides**;
+- o **slide 1** deve ser a **capa do carrossel**, com **gancho forte no título e no subtítulo**, ambos bem desenvolvidos;
+- os slides intermediários devem conduzir o raciocínio de forma progressiva, clara e estratégica;
+- o **slide 11** deve ser o **CTA final**, com chamada simultânea para o **infoproduto** e para a **leitura do artigo completo** na página do site;
+- o texto precisa ser visualmente aproveitável para Instagram, com leitura rápida e boa cadência narrativa.
 
 Boas práticas do carrossel:
 - abrir com um **gancho forte** e específico;
-- manter cada slide com leitura rápida;
-- alternar **problema**, **impacto**, **direito**, **passo prático** e **CTA**;
-- terminar com ação clara: baixar ebook, entrar na lista, comentar palavra-chave ou agendar consulta.
+- manter cada slide com leitura rápida, porém substancial;
+- alternar **problema**, **impacto**, **direito**, **erro comum**, **passo prático**, **insight estratégico** e **CTA**;
+- garantir coerência entre carrossel, artigo e material complementar.
 
 ### Etapa 4 — Associação com personagem, série ou figura pública
-Associe o carrossel a um referente cultural ou público que aumente identificação.
+No início do `slides.md`, sempre inclua a seção **Associação Cultural Sugerida**.
+
+Essa associação deve refletir:
+- um **personagem de série, filme ou programa de TV**; ou
+- um **protagonista do cenário político, jurídico, econômico ou financeiro atual**.
+
+Objetivo:
+- facilitar a criação visual do carrossel;
+- permitir a busca de imagens de referência na internet para composição estética dos slides;
+- aumentar identificação e memorabilidade do conteúdo.
 
 Critérios:
 - a associação deve ser **pertinente**, não forçada;
 - use analogia para facilitar entendimento, não para afirmar fatos não comprovados;
-- prefira referências amplamente conhecidas do momento;
+- prefira referências amplamente conhecidas e visualmente úteis;
 - evite comparações potencialmente difamatórias ou ofensivas.
 
 Formato sugerido:
 - **Referência escolhida**
 - **Por que combina com o tema**
-- **Como usar no slide 1 ou na legenda**
+- **Direção visual sugerida para os slides**
 
 ### Etapa 5 — Organização dos entregáveis na pasta `Conteudo`
 Sempre que o usuário pedir produção estruturada por área, crie **por padrão** a seguinte organização:
@@ -111,16 +127,19 @@ Sempre que o usuário pedir produção estruturada por área, crie **por padrão
 ```text
 Conteudo/<RamoCorrelato>/<AAAA-MM-DD>/
 ├── artigo.md
-└── info.md
+├── info.md
+└── slides.md
 ```
 
 Regras:
 - use a **data atual no formato `AAAA-MM-DD`**;
 - escolha o ramo correlato já existente no projeto, como `Imobiliario`, `Saude`, `Bancario`, `Digital` etc.;
 - cada `artigo.md` deve ter **um infoproduto principal complementar** em `info.md`, salvo pedido expresso por múltiplas ofertas;
+- cada pasta também deve conter **`slides.md`** com o roteiro final do carrossel em **11 slides**;
 - `info2.md`, `info3.md` e demais variações só devem ser criados quando o usuário solicitar **upsells, versões alternativas ou esteira comercial adicional**;
 - desenvolva o `artigo.md` com profundidade, tom autoral e aplicabilidade prática;
-- desenvolva o `info.md` usando o template [infoproduct-template](./assets/infoproduct-template.md).
+- desenvolva o `info.md` usando o template [infoproduct-template](./assets/infoproduct-template.md);
+- desenvolva o `slides.md` usando o template [carousel-template](./assets/carousel-template.md).
 
 ### Etapa 6 — Estrutura dos infoprodutos para Hotmart
 Cada arquivo de infoproduto deve trazer, no mínimo:
@@ -170,9 +189,10 @@ Quando esta skill for usada, entregue no seguinte formato:
 6. **Associação cultural ou pública sugerida**
 7. **Próximos conteúdos derivados** (ex.: reel, story, lead magnet, live, FAQ)
 8. **Estrutura criada em `Conteudo/<Ramo>/<AAAA-MM-DD>/`**
-9. **Arquivos `artigo.md` e `info.md` com detalhamento comercial e conteúdo desenvolvido do produto**
-10. **Arquivos adicionais como `info2.md` e `info3.md` apenas se houver pedido expresso de múltiplas ofertas**
-11. **Publicação ou sugestão de publicação na página `Conteúdos Jurídicos`**
+9. **Arquivos `artigo.md`, `info.md` e `slides.md` devidamente preenchidos**
+10. **`slides.md` com 11 slides, associação cultural sugerida no topo e CTA final para o material e o artigo**
+11. **Arquivos adicionais como `info2.md` e `info3.md` apenas se houver pedido expresso de múltiplas ofertas**
+12. **Publicação ou sugestão de publicação na página `Conteúdos Jurídicos`**
 
 ## Guardrails essenciais
 - Não apresentar o conteúdo como consultoria jurídica individual.
