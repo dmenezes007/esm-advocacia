@@ -1,4 +1,6 @@
-# Infoproduto 03 — Hotmart
+# Oferta Complementar Opcional 03 — Hotmart
+
+> Este arquivo representa uma oferta complementar opcional. O infoproduto principal vinculado ao artigo está em `info.md`.
 
 ## b.1. Identificação do Produto
 **Agentes de IA** — Crie e venda um agente treinado com seu conhecimento.
@@ -48,3 +50,32 @@ O agente entrega respostas rápidas, organizadas e educativas sobre:
 
 ## Posicionamento comercial
 Pode ser ofertado como produto premium de triagem inteligente ou como bônus dentro de um ecossistema maior com ebook, curso e consulta estratégica.
+
+## Conteúdo desenvolvido do agente
+
+### Objetivo do agente
+O agente foi desenhado para orientar o usuário em uma etapa inicial de triagem educativa sobre compra de imóvel na planta, atraso da obra, organização documental e análise preliminar de distrato. A proposta é transformar dúvidas genéricas em um fluxo mais claro de ação, sem substituir atendimento jurídico individualizado.
+
+### Fluxo principal de interação
+1. o agente pergunta se a pessoa já assinou contrato ou ainda está avaliando a compra;
+2. identifica se há atraso, proposta de acordo ou intenção de distrato;
+3. organiza os documentos que o usuário deve reunir;
+4. explica, em linguagem simples, os principais pontos de atenção;
+5. direciona para material complementar ou consulta especializada quando necessário.
+
+### Perguntas-base do agente
+- Você já está com a obra atrasada ou ainda está na fase de contratação?
+- O contrato prevê prazo de tolerância?
+- Houve proposta formal de distrato?
+- Quais documentos você já tem em mãos?
+- O seu objetivo é manter o contrato, negociar ou entender se vale rescindir?
+
+### Respostas e entregáveis esperados
+O agente deve devolver:
+- checklist inicial de documentos;
+- resumo dos riscos mais comuns do cenário informado;
+- orientação educativa sobre próximos passos;
+- encaminhamento para consulta humana quando houver necessidade de análise individual.
+
+### Limites e observações éticas
+O agente não deve prometer resultado jurídico, substituir análise do caso concreto nem criar falsa impressão de consultoria personalizada. Seu papel é educativo, organizacional e preparatório.

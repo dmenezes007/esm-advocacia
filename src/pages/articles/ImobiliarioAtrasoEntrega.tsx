@@ -95,21 +95,21 @@ const ImobiliarioAtrasoEntrega = () => {
           <CardContent className="p-6 md:p-8">
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
               <div className="space-y-2">
-                <div className="inline-flex items-center gap-2 text-[#f5af00]"><Scale className="h-4 w-4" /> Material complementar</div>
+                <div className="inline-flex items-center gap-2 text-[#f5af00]"><Scale className="h-4 w-4" /> Material Complementar</div>
                 <h3 className="text-2xl font-bold">Quer se aprofundar antes de decidir?</h3>
                 <p className="text-[#ffffff]/80">
                   Baixe o nosso checklist do comprador de imóvel na planta e entenda os principais cuidados antes de aceitar atraso, acordo ou distrato.
                 </p>
               </div>
               <div className="flex flex-col gap-3 sm:flex-row">
-                <Link to="/schedule?area=1">
+                <Link to="/contact">
                   <Button size="lg" className="w-full border-0 bg-[#f5af00] text-[#091f1a] hover:bg-[#d99a00] sm:w-auto">
-                    Agendar Consulta
+                    <Download className="mr-2 h-4 w-4" /> Adquirir Material
                   </Button>
                 </Link>
-                <Link to="/contact">
+                <Link to="/schedule?area=1">
                   <Button variant="outline" size="lg" className="w-full border-[#ffffff]/30 bg-transparent text-[#ffffff] hover:bg-[#ffffff]/10 hover:text-[#ffffff] sm:w-auto">
-                    <Download className="mr-2 h-4 w-4" /> Solicitar Material
+                    Agendar Consulta
                   </Button>
                 </Link>
               </div>

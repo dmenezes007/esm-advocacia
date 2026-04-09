@@ -1,4 +1,6 @@
-# Infoproduto 02 — Hotmart
+# Oferta Complementar Opcional 02 — Hotmart
+
+> Este arquivo representa uma oferta complementar opcional. O infoproduto principal vinculado ao artigo está em `info.md`.
 
 ## b.1. Identificação do Produto
 **Curso Online** — Aulas em vídeo, texto, quiz, materiais e muito mais.
@@ -64,3 +66,26 @@ Ao final do curso, o aluno terá uma leitura mais segura do contrato, saberá id
 
 ## Posicionamento comercial
 Produto com perfil de ticket intermediário, excelente para combinar autoridade, escala e geração de clientes mais conscientes para serviços jurídicos personalizados.
+
+## Conteúdo desenvolvido do curso
+
+### Aula de abertura — Como evitar decisões caras por falta de leitura técnica
+Nesta aula inicial, o aluno entende por que a compra na planta precisa ser tratada como decisão patrimonial estratégica. A proposta é mostrar que muitos prejuízos surgem não da má-fé evidente, mas da ausência de leitura cuidadosa do contrato e dos sinais de alerta da operação.
+
+### Módulo 1 — Fundamentos da compra na planta
+O aluno aprende como funciona a dinâmica básica da contratação, quais são os principais documentos e quais expectativas precisam ser alinhadas desde o início. A ideia é criar base para que ele entenda o restante do curso sem depender de linguagem excessivamente técnica.
+
+### Módulo 2 — Cláusulas que mais impactam o bolso do comprador
+Aqui o foco recai sobre prazo de entrega, tolerância, reajuste, rescisão e retenção. Cada aula explica o que observar, por que aquela cláusula importa e quais perguntas práticas o comprador deve fazer antes de seguir adiante.
+
+### Módulo 3 — O que fazer quando a obra atrasa
+Este módulo ensina a organizar provas, registrar comunicações e analisar propostas de solução com mais racionalidade. O aluno recebe um roteiro simples para sair do improviso e adotar uma postura mais estratégica.
+
+### Módulo 4 — Distrato, negociação e tomada de decisão
+Nesta parte, o curso ajuda o aluno a pensar em cenários: permanecer, negociar ou discutir a rescisão. O objetivo é mostrar que cada caminho envolve impacto patrimonial diferente e exige leitura contextualizada do caso.
+
+### Material de apoio sugerido
+- checklist PDF de documentos;
+- quiz de revisão ao final dos módulos;
+- roteiro de perguntas para reuniões com a construtora;
+- planilha simples de organização de despesas decorrentes do atraso.

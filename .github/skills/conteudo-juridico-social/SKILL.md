@@ -106,21 +106,21 @@ Formato sugerido:
 - **Como usar no slide 1 ou na legenda**
 
 ### Etapa 5 — Organização dos entregáveis na pasta `Conteudo`
-Sempre que o usuário pedir produção estruturada por área, crie a seguinte organização:
+Sempre que o usuário pedir produção estruturada por área, crie **por padrão** a seguinte organização:
 
 ```text
 Conteudo/<RamoCorrelato>/<AAAA-MM-DD>/
 ├── artigo.md
-├── info.md
-├── info2.md
-└── info3.md (opcional)
+└── info.md
 ```
 
 Regras:
 - use a **data atual no formato `AAAA-MM-DD`**;
 - escolha o ramo correlato já existente no projeto, como `Imobiliario`, `Saude`, `Bancario`, `Digital` etc.;
+- cada `artigo.md` deve ter **um infoproduto principal complementar** em `info.md`, salvo pedido expresso por múltiplas ofertas;
+- `info2.md`, `info3.md` e demais variações só devem ser criados quando o usuário solicitar **upsells, versões alternativas ou esteira comercial adicional**;
 - desenvolva o `artigo.md` com profundidade, tom autoral e aplicabilidade prática;
-- desenvolva os infoprodutos em `info.md`, `info2.md`... usando o template [infoproduct-template](./assets/infoproduct-template.md).
+- desenvolva o `info.md` usando o template [infoproduct-template](./assets/infoproduct-template.md).
 
 ### Etapa 6 — Estrutura dos infoprodutos para Hotmart
 Cada arquivo de infoproduto deve trazer, no mínimo:
@@ -135,10 +135,19 @@ Cada arquivo de infoproduto deve trazer, no mínimo:
 - **b.3. Nome do Produto** — claro, objetivo e impactante;
 - **b.4. Preço do Produto** — definido pelo custo-benefício e pela estratégia da oferta.
 
+Além das informações de divulgação para Hotmart, o arquivo deve conter **o conteúdo do produto em si, amplamente desenvolvido**.
+
+Exemplos:
+- se for **eBook**, incluir sumário, capítulos redigidos, checklists e conclusão;
+- se for **Curso Online**, incluir módulos, aulas, objetivos, exercícios e materiais de apoio;
+- se for **Comunidade** ou **Assinatura**, incluir trilha editorial, cronograma e entregáveis recorrentes;
+- se for **Agente de IA**, incluir base de conhecimento, fluxos, prompts centrais, casos de uso e limites éticos.
+
 Sempre que possível, complemente com:
 - promessa central;
 - público-alvo;
 - módulos ou entregáveis;
+- conteúdo efetivamente desenvolvido;
 - diferenciais;
 - CTA de compra;
 - observações de posicionamento comercial.
@@ -161,8 +170,9 @@ Quando esta skill for usada, entregue no seguinte formato:
 6. **Associação cultural ou pública sugerida**
 7. **Próximos conteúdos derivados** (ex.: reel, story, lead magnet, live, FAQ)
 8. **Estrutura criada em `Conteudo/<Ramo>/<AAAA-MM-DD>/`**
-9. **Arquivos `artigo.md`, `info.md`, `info2.md`... com detalhamento comercial**
-10. **Publicação ou sugestão de publicação na página `Conteúdos Jurídicos`**
+9. **Arquivos `artigo.md` e `info.md` com detalhamento comercial e conteúdo desenvolvido do produto**
+10. **Arquivos adicionais como `info2.md` e `info3.md` apenas se houver pedido expresso de múltiplas ofertas**
+11. **Publicação ou sugestão de publicação na página `Conteúdos Jurídicos`**
 
 ## Guardrails essenciais
 - Não apresentar o conteúdo como consultoria jurídica individual.
