@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Search, FileText, BookOpen, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -6,6 +7,15 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription, CardFooter }
 import { Badge } from "@/components/ui/badge";
 
 const articles = [
+  {
+    id: 0,
+    title: "Atraso na entrega do imóvel na planta: como reduzir prejuízos",
+    category: "Direito Imobiliário",
+    date: "09 Abr 2026",
+    readTime: "7 min de leitura",
+    excerpt: "Entenda os principais cuidados com atraso de obra, distrato e organização documental para proteger seu patrimônio.",
+    href: "/resources/imobiliario-atraso-entrega-imovel",
+  },
   {
     id: 1,
     title: "Direitos de Propriedade Intelectual na Era Digital",
@@ -134,9 +144,17 @@ const Resources = () => {
                   <p className="text-[#091f1a]/75 text-sm line-clamp-3">{article.excerpt}</p>
                 </CardContent>
                 <CardFooter>
-                  <Button variant="link" className="p-0 h-auto text-[#091f1a] hover:text-[#f5af00] font-semibold group">
-                    Ler Artigo <ChevronRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                  </Button>
+                  {article.href ? (
+                    <Link to={article.href}>
+                      <Button variant="link" className="p-0 h-auto text-[#091f1a] hover:text-[#f5af00] font-semibold group">
+                        Ler Artigo <ChevronRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      </Button>
+                    </Link>
+                  ) : (
+                    <Button variant="link" className="p-0 h-auto text-[#091f1a]/60 font-semibold" disabled>
+                      Em breve
+                    </Button>
+                  )}
                 </CardFooter>
               </Card>
             ))

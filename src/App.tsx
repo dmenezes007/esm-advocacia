@@ -9,6 +9,7 @@ import Dashboard from "@/pages/Dashboard";
 import About from "@/pages/About";
 import Resources from "@/pages/Resources";
 import Contact from "@/pages/Contact";
+import ImobiliarioAtrasoEntrega from "@/pages/articles/ImobiliarioAtrasoEntrega";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/about" element={<About />} />
           <Route path="/resources" element={<Resources />} />
+          <Route path="/resources/imobiliario-atraso-entrega-imovel" element={<ImobiliarioAtrasoEntrega />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
