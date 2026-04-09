@@ -20,7 +20,7 @@ const Home = () => {
                 Soluções Jurídicas Estratégicas para a Nova Economia
               </div>
               <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-6xl">
-                Defesa dos seus direitos com <span className="text-[#f5af00]">precisão jurídica</span> e <span className="text-[#f5af00]">integridade</span>
+                Defendemos seus direitos com <span className="text-[#f5af00]">precisão jurídica</span> e <span className="text-[#f5af00]">integridade</span>
               </h1>
               <p className="max-w-2xl text-lg leading-relaxed text-[#ffffff]/80 md:text-xl">
                 A ESM Advocacia Especializada combina excelência técnica e tecnologia para oferecer
