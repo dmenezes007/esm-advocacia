@@ -72,7 +72,7 @@ const Home = () => {
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-[#091f1a] sm:text-4xl">Por que nossos clientes confiam na ESM?</h2>
             <p className="mt-4 text-lg text-[#091f1a]/75">
-              Nosso modelo de trabalho une estratégia jurídica, workflows estrturados, comunicação clara e foco em resultado.
+              Nosso modelo de trabalho une estratégia jurídica, workflows estruturados, comunicação clara e foco em resultado.
             </p>
           </div>
 
