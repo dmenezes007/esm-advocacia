@@ -13,7 +13,7 @@ const Home = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-[#091f1a]/80 via-[#0b8767]/20 to-[#091f1a]"></div>
         
         <div className="container relative z-10 mx-auto px-4 md:px-6">
-          <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(320px,0.9fr)] lg:gap-14">
+          <div className="grid items-center gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(360px,1.05fr)] xl:gap-10">
             <div className="max-w-3xl space-y-6">
               <div className="inline-flex items-center rounded-full border border-[#f5af00]/40 bg-[#f5af00]/15 px-3 py-1 text-sm font-medium text-[#f5af00] backdrop-blur-sm">
                 <span className="mr-2 flex h-2 w-2 rounded-full bg-[#f5af00]"></span>
@@ -55,16 +55,12 @@ const Home = () => {
               </div>
             </div>
 
-            <div className="mx-auto w-full max-w-xl lg:mx-0 lg:justify-self-end">
-              <div className="relative overflow-hidden rounded-[2rem] border border-[#ffffff]/10 bg-[#0b241e]/65 p-5 shadow-[0_25px_80px_rgba(0,0,0,0.35)] backdrop-blur-sm sm:p-8">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#f5af00]/10 via-transparent to-[#0b8767]/20"></div>
-                <div className="absolute inset-6 rounded-[1.5rem] border border-[#f5af00]/15"></div>
-                <img
-                  src={logo3d}
-                  alt="Logomarca 3D da ESM Advocacia Especializada"
-                  className="relative z-10 mx-auto w-full max-w-md object-contain drop-shadow-[0_25px_60px_rgba(245,175,0,0.28)]"
-                />
-              </div>
+            <div className="flex w-full items-center justify-center lg:justify-end">
+              <img
+                src={logo3d}
+                alt="Logomarca 3D da ESM Advocacia Especializada"
+                className="block w-full max-w-[680px] object-contain"
+              />
             </div>
           </div>
         </div>
