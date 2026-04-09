@@ -17,7 +17,7 @@ const Home = () => {
             <div className="max-w-3xl space-y-6">
               <div className="inline-flex items-center rounded-full border border-[#f5af00]/40 bg-[#f5af00]/15 px-3 py-1 text-sm font-medium text-[#f5af00] backdrop-blur-sm">
                 <span className="mr-2 flex h-2 w-2 rounded-full bg-[#f5af00]"></span>
-                Soluções Jurídicas Estratégicas para a Nova Economia
+                Soluções Jurídicas para a Nova Economia
               </div>
               <h1 className="text-4xl font-bold leading-tight tracking-tight md:text-6xl">
                 Defendemos seus direitos com <span className="text-[#f5af00]">precisão jurídica</span> e <span className="text-[#f5af00]">integridade</span>
