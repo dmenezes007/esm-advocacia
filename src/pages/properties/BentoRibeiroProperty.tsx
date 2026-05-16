@@ -45,7 +45,11 @@ const BentoRibeiroProperty = () => {
               Solução ideal para quem busca praticidade no dia a dia, com condomínio acessível e localização estratégica na Zona Norte do Rio.
             </p>
             <div className="flex flex-wrap items-center gap-3 text-sm text-[#ffffff]/85">
-              <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Valor de venda: R$ 149.900,00</span>
+              <div className="rounded-xl border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-2">
+                <p className="text-xs uppercase tracking-[0.14em] text-[#ffffff]/75">Valor de venda</p>
+                <p className="price-strike text-base font-semibold text-[#ffd1d3]">R$ 149.900,00</p>
+                <span className="reduced-tag">REDUZIDO</span>
+              </div>
               <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Condomínio: R$ 355,00</span>
               <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">IPTU: isento</span>
             </div>

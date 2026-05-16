@@ -45,7 +45,11 @@ const TaquaraProperty = () => {
               Um imóvel espaçoso para famílias e investidores que buscam localização valorizada, planta generosa e excelente potencial de qualidade de vida.
             </p>
             <div className="flex flex-wrap items-center gap-3 text-sm text-[#ffffff]/85">
-              <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Valor de venda: R$ 449.900,00</span>
+              <div className="rounded-xl border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-2">
+                <p className="text-xs uppercase tracking-[0.14em] text-[#ffffff]/75">Valor de venda</p>
+                <p className="price-strike text-base font-semibold text-[#ffd1d3]">R$ 449.900,00</p>
+                <span className="reduced-tag">REDUZIDO</span>
+              </div>
               <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Condomínio: R$ 1.135,00</span>
               <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">IPTU: R$ 1.200,00</span>
             </div>

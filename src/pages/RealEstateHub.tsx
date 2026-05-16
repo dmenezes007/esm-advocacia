@@ -93,8 +93,9 @@ const RealEstateHub = () => {
                   alt={item.title}
                   className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
-                <div className="absolute left-4 top-4 rounded-full bg-[#091f1a]/80 px-4 py-1 text-sm font-semibold text-[#f5af00]">
-                  {item.price}
+                <div className="absolute left-4 top-4 rounded-2xl bg-[#091f1a]/80 px-4 py-2 text-sm font-semibold text-[#f5af00]">
+                  <p className="price-strike text-base leading-none text-[#ffd1d3]">{item.price}</p>
+                  <span className="reduced-tag">REDUZIDO</span>
                 </div>
               </div>
               <CardContent className="space-y-4 p-6">
