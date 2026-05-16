@@ -11,6 +11,10 @@ const PropertyPhotoSlider = ({ images, altPrefix }: PropertyPhotoSliderProps) =>
   const [currentIndex, setCurrentIndex] = useState(0);
   const groupStart = Math.floor(currentIndex / 3) * 3;
   const topImages = safeImages.slice(groupStart, groupStart + 3);
+  const topIndexes = topImages.map((_, index) => groupStart + index);
+  const thumbIndexes = safeImages
+    .map((_, index) => index)
+    .filter((index) => !topIndexes.includes(index));
 
   if (safeImages.length === 0) {
     return (
@@ -19,14 +23,6 @@ const PropertyPhotoSlider = ({ images, altPrefix }: PropertyPhotoSliderProps) =>
       </div>
     );
   }
-
-  const goPrev = () => {
-    setCurrentIndex((prev) => (prev === 0 ? safeImages.length - 1 : prev - 1));
-  };
-
-  const goNext = () => {
-    setCurrentIndex((prev) => (prev === safeImages.length - 1 ? 0 : prev + 1));
-  };
 
   const goPrevGroup = () => {
     setCurrentIndex((prev) => {
@@ -47,84 +43,67 @@ const PropertyPhotoSlider = ({ images, altPrefix }: PropertyPhotoSliderProps) =>
 
   return (
     <div className="space-y-4">
-      <div className="rounded-2xl border border-[#091f1a]/10 bg-[#ffffff] p-3">
-        <div className="mb-3 flex items-center justify-between">
-          <p className="text-sm font-semibold text-[#091f1a]/70">Fotos em destaque (3 por vez)</p>
-          <div className="flex items-center gap-2">
-            <button
-              type="button"
-              aria-label="Grupo anterior de fotos"
-              onClick={goPrevGroup}
-              className="rounded-full border border-[#091f1a]/15 bg-[#ffffff] p-1.5 text-[#091f1a] transition hover:bg-[#f5af00]/20"
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </button>
-            <button
-              type="button"
-              aria-label="Próximo grupo de fotos"
-              onClick={goNextGroup}
-              className="rounded-full border border-[#091f1a]/15 bg-[#ffffff] p-1.5 text-[#091f1a] transition hover:bg-[#f5af00]/20"
-            >
-              <ChevronRight className="h-4 w-4" />
-            </button>
-          </div>
-        </div>
+      <div className="relative overflow-hidden rounded-2xl border border-[#091f1a]/10 bg-[#091f1a]">
+        <button
+          type="button"
+          aria-label="Grupo anterior de fotos"
+          onClick={goPrevGroup}
+          className="absolute left-3 top-3 z-10 rounded-full border border-[#ffffff]/30 bg-[#091f1a]/75 p-1.5 text-[#ffffff] transition hover:bg-[#0f3028]"
+        >
+          <ChevronLeft className="h-4 w-4" />
+        </button>
 
-        <div className="grid grid-cols-3 gap-3">
+        <button
+          type="button"
+          aria-label="Próximo grupo de fotos"
+          onClick={goNextGroup}
+          className="absolute right-3 top-3 z-10 rounded-full border border-[#ffffff]/30 bg-[#091f1a]/75 p-1.5 text-[#ffffff] transition hover:bg-[#0f3028]"
+        >
+          <ChevronRight className="h-4 w-4" />
+        </button>
+
+        <div className="grid grid-cols-1 gap-0 md:grid-cols-3">
           {topImages.map((src, index) => {
             const realIndex = groupStart + index;
             return (
-              <button
-                key={`${src}-${realIndex}`}
-                type="button"
-                onClick={() => setCurrentIndex(realIndex)}
-                className={`overflow-hidden rounded-xl border-2 transition ${
-                  realIndex === currentIndex ? "border-[#f5af00]" : "border-transparent"
-                }`}
-                aria-label={`Ir para foto ${realIndex + 1}`}
-              >
+              <div key={`${src}-${realIndex}`} className="relative h-[300px] border-[#ffffff]/10 md:h-[380px] md:border-l first:border-l-0">
                 <img
                   src={src}
-                  alt={`${altPrefix} - miniatura ${realIndex + 1}`}
-                  className="h-24 w-full object-cover sm:h-28"
+                  alt={`${altPrefix} - destaque ${realIndex + 1}`}
+                  className="h-full w-full object-contain"
                 />
-              </button>
+              </div>
             );
           })}
         </div>
-      </div>
 
-      <div className="relative overflow-hidden rounded-2xl bg-[#0f3028]">
-        <img
-          src={safeImages[currentIndex]}
-          alt={`${altPrefix} - foto ${currentIndex + 1}`}
-          className="h-[260px] w-full object-contain sm:h-[380px] md:h-[540px]"
-        />
-
-        <button
-          type="button"
-          aria-label="Foto anterior"
-          onClick={goPrev}
-          className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-[#ffffff]/30 bg-[#091f1a]/65 p-2 text-[#ffffff] transition hover:bg-[#091f1a]"
-        >
-          <ChevronLeft className="h-5 w-5" />
-        </button>
-
-        <button
-          type="button"
-          aria-label="Próxima foto"
-          onClick={goNext}
-          className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-[#ffffff]/30 bg-[#091f1a]/65 p-2 text-[#ffffff] transition hover:bg-[#091f1a]"
-        >
-          <ChevronRight className="h-5 w-5" />
-        </button>
-
-        <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-[#091f1a]/70 px-3 py-1 text-xs text-[#ffffff]">
-          <span>
-            {currentIndex + 1}/{safeImages.length}
-          </span>
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 rounded-full bg-[#091f1a]/70 px-3 py-1 text-xs text-[#ffffff]">
+          Destaques {groupStart + 1}-{Math.min(groupStart + 3, safeImages.length)} de {safeImages.length}
         </div>
       </div>
+
+      {thumbIndexes.length > 0 && (
+        <div className="rounded-2xl border border-[#091f1a]/10 bg-[#ffffff] p-3">
+          <p className="mb-3 text-sm font-semibold text-[#091f1a]/70">Demais fotos (miniaturas)</p>
+          <div className="no-scrollbar flex gap-2 overflow-x-auto pb-1">
+            {thumbIndexes.map((index) => (
+              <button
+                key={`${safeImages[index]}-${index}`}
+                type="button"
+                onClick={() => setCurrentIndex(index)}
+                className="shrink-0 overflow-hidden rounded-lg border border-[#091f1a]/10 transition hover:border-[#f5af00]"
+                aria-label={`Destacar foto ${index + 1}`}
+              >
+                <img
+                  src={safeImages[index]}
+                  alt={`${altPrefix} - miniatura ${index + 1}`}
+                  className="h-20 w-28 object-cover sm:h-24 sm:w-36"
+                />
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };
