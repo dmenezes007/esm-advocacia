@@ -61,7 +61,7 @@ const RealEstateHub = () => {
               {[
                 "Análise de risco da negociação",
                 "Suporte contratual e registral",
-                "Atendimento humanizado do início ao fechamento",
+                "Humanização do início ao fechamento",
               ].map((item) => (
                 <div key={item} className="rounded-xl border border-[#ffffff]/15 bg-[#ffffff]/5 p-4 text-sm">
                   <ShieldCheck className="mb-2 h-4 w-4 text-[#f5af00]" />
