@@ -17,12 +17,12 @@ import TaquaraProperty from "@/pages/properties/TaquaraProperty";
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
   const isDashboard = location.pathname.startsWith("/dashboard");
-  const isHome = location.pathname === "/";
+  const isHeroRoute = location.pathname === "/" || location.pathname.startsWith("/imoveis");
 
   return (
     <div className="flex flex-col min-h-screen antialiased text-[#091f1a] bg-[#ffffff]">
       {!isDashboard && <Navbar />}
-      <main className={isDashboard || isHome ? "flex-grow" : "flex-grow pt-24 md:pt-28"}>{children}</main>
+      <main className={isDashboard || isHeroRoute ? "flex-grow" : "flex-grow pt-24 md:pt-28"}>{children}</main>
       {!isDashboard && <Footer />}
     </div>
   );
