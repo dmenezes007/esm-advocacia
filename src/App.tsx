@@ -10,6 +10,9 @@ import About from "@/pages/About";
 import Resources from "@/pages/Resources";
 import Contact from "@/pages/Contact";
 import ImobiliarioAtrasoEntrega from "@/pages/articles/ImobiliarioAtrasoEntrega";
+import RealEstateHub from "@/pages/RealEstateHub";
+import BentoRibeiroProperty from "@/pages/properties/BentoRibeiroProperty";
+import TaquaraProperty from "@/pages/properties/TaquaraProperty";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   const location = useLocation();
@@ -37,6 +40,9 @@ export default function App() {
           <Route path="/about" element={<About />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/resources/imobiliario-atraso-entrega-imovel" element={<ImobiliarioAtrasoEntrega />} />
+          <Route path="/imoveis" element={<RealEstateHub />} />
+          <Route path="/imoveis/bento-ribeiro" element={<BentoRibeiroProperty />} />
+          <Route path="/imoveis/taquara" element={<TaquaraProperty />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>

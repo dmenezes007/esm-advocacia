@@ -186,6 +186,30 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Real Estate Spotlight */}
+      <section className="py-20 bg-[#ffffff]">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="grid gap-8 rounded-2xl border border-[#091f1a]/10 bg-[linear-gradient(130deg,#091f1a_0%,#114438_50%,#1a5e4f_100%)] p-8 text-[#ffffff] md:grid-cols-[1.2fr_1fr] md:p-12">
+            <div>
+              <p className="mb-3 inline-flex items-center rounded-full border border-[#f5af00]/40 bg-[#f5af00]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#f5af00]">
+                Vitrine Imobiliaria ESM
+              </p>
+              <h2 className="text-3xl font-bold leading-tight md:text-4xl">Imoveis selecionados com suporte juridico completo</h2>
+              <p className="mt-4 max-w-2xl text-[#ffffff]/80">
+                Conheca os imoveis em Bento Ribeiro e Taquara com analise documental, orientacao contratual e atendimento consultivo do escritorio durante toda a negociacao.
+              </p>
+            </div>
+            <div className="flex items-center justify-start md:justify-end">
+              <Link to="/imoveis">
+                <Button size="lg" className="bg-[#f5af00] text-[#091f1a] hover:bg-[#d99a00]">
+                  Explorar imoveis em destaque <ChevronRight className="ml-2 h-4 w-4" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="py-20 bg-[#ffffff]">
         <div className="container mx-auto px-4 md:px-6">

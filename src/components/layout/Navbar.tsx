@@ -28,6 +28,7 @@ const Navbar = () => {
   const navLinks = [
     { name: "Início", path: "/" },
     { name: "Áreas de Atuação", path: "/practice-areas" },
+    { name: "Imóveis", path: "/imoveis" },
     { name: "Sobre", path: "/about" },
     { name: "Conteúdos", path: "/resources" },
     { name: "Contato", path: "/contact" },
