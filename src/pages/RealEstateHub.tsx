@@ -10,7 +10,7 @@ const taquaraCover = new URL("../../imoveis/taquara/894020836-742.63934051442965
 const listings = [
   {
     title: "Apartamento em Bento Ribeiro",
-    subtitle: "52 m2 | 2 quartos | oportunidade para morar ou investir",
+    subtitle: "52 m² | 2 quartos | oportunidade para morar ou investir",
     price: "R$ 149.900,00",
     location: "Estrada Henrique de Melo, Bento Ribeiro - Rio de Janeiro/RJ",
     image: bentoCover,
@@ -18,7 +18,7 @@ const listings = [
   },
   {
     title: "Apartamento na Taquara",
-    subtitle: "144 m2 | 3 quartos (1 suite) | vista panoramica",
+    subtitle: "144 m² | 3 quartos (1 suíte) | vista panorâmica",
     price: "R$ 449.900,00",
     location: "Estrada Rodrigues Caldas, Taquara - Rio de Janeiro/RJ",
     image: taquaraCover,
@@ -38,6 +38,9 @@ const RealEstateHub = () => {
     }
   }, []);
 
+  const CONSULTOR_WHATSAPP_URL =
+    "https://whatsa.me/5521981125585/?t=Ol%C3%A1!%20Quero%20falar%20com%20um%20consultor%20da%20ESM%20Advocacia%20Especializada";
+
   return (
     <div className="min-h-screen bg-[#f8faf9] text-[#091f1a]">
       <section className="relative overflow-hidden bg-[#091f1a] py-20 text-[#ffffff]">
@@ -46,19 +49,19 @@ const RealEstateHub = () => {
           <div className="max-w-4xl space-y-6">
             <span className="inline-flex items-center gap-2 rounded-full border border-[#f5af00]/40 bg-[#f5af00]/15 px-4 py-1 text-sm font-medium text-[#f5af00]">
               <Building2 className="h-4 w-4" />
-              Imoveis selecionados com suporte juridico completo
+              Imóveis selecionados com suporte jurídico completo
             </span>
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              Consultoria imobiliaria com visao juridica para uma compra segura
+              Consultoria imobiliária com visão jurídica para uma compra segura
             </h1>
             <p className="max-w-3xl text-lg text-[#ffffff]/80 md:text-xl">
-              A ESM Advocacia atua no processo imobiliario com estrategia, analise documental e acompanhamento tecnico para proteger seu patrimonio.
+              A ESM Advocacia atua no processo imobiliário com estratégia, análise documental e acompanhamento técnico para proteger seu patrimônio.
             </p>
             <div className="grid gap-3 sm:grid-cols-3">
               {[
-                "Analise de risco da negociacao",
+                "Análise de risco da negociação",
                 "Suporte contratual e registral",
-                "Atendimento humanizado do inicio ao fechamento",
+                "Atendimento humanizado do início ao fechamento",
               ].map((item) => (
                 <div key={item} className="rounded-xl border border-[#ffffff]/15 bg-[#ffffff]/5 p-4 text-sm">
                   <ShieldCheck className="mb-2 h-4 w-4 text-[#f5af00]" />
@@ -75,9 +78,9 @@ const RealEstateHub = () => {
           <div>
             <p className="mb-2 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.18em] text-[#0b8767]">
               <Sparkles className="h-4 w-4" />
-              Vitrine Imobiliaria
+              Vitrine Imobiliária
             </p>
-            <h2 className="text-3xl font-bold md:text-4xl">Imoveis em destaque</h2>
+            <h2 className="text-3xl font-bold md:text-4xl">Imóveis em destaque</h2>
           </div>
         </div>
 
@@ -103,7 +106,7 @@ const RealEstateHub = () => {
                 </p>
                 <Link to={item.href}>
                   <Button className="w-full bg-[#f5af00] text-[#091f1a] hover:bg-[#d99a00]">
-                    Ver detalhes do imovel <ChevronRight className="ml-2 h-4 w-4" />
+                    Ver detalhes do imóvel <ChevronRight className="ml-2 h-4 w-4" />
                   </Button>
                 </Link>
               </CardContent>
@@ -116,17 +119,17 @@ const RealEstateHub = () => {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid gap-8 rounded-2xl border border-[#091f1a]/10 bg-[linear-gradient(120deg,#ffffff_0%,#f4fbf8_45%,#fff5d9_100%)] p-8 md:grid-cols-[1.3fr_1fr] md:p-10">
             <div>
-              <h3 className="mb-3 text-3xl font-bold">Assessoria para venda, compra e regularizacao</h3>
+              <h3 className="mb-3 text-3xl font-bold">Assessoria para venda, compra e regularização</h3>
               <p className="max-w-2xl text-[#091f1a]/75">
-                Nossa equipe oferece orientacao juridica e estrategica para negociacoes imobiliarias com transparencia e seguranca, desde a primeira visita ate a assinatura final.
+                Nossa equipe oferece orientação jurídica e estratégica para negociações imobiliárias com transparência e segurança, desde a primeira visita até a assinatura final.
               </p>
             </div>
             <div className="flex items-center justify-start md:justify-end">
-              <Link to="/contact">
+              <a href={CONSULTOR_WHATSAPP_URL} target="_blank" rel="noreferrer">
                 <Button size="lg" className="bg-[#091f1a] text-[#ffffff] hover:bg-[#0f3028]">
-                  Falar com consultor imobiliario <Home className="ml-2 h-4 w-4" />
+                  Falar com consultor imobiliário <Home className="ml-2 h-4 w-4" />
                 </Button>
-              </Link>
+              </a>
             </div>
           </div>
         </div>

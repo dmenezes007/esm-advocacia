@@ -22,7 +22,7 @@ const BentoRibeiroProperty = () => {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Apartamento de 52 m2 em Bento Ribeiro, Rio de Janeiro: 2 quartos, condominio fechado e suporte juridico completo da ESM Advocacia.",
+        "Apartamento de 52 m² em Bento Ribeiro, Rio de Janeiro: 2 quartos, condomínio fechado e suporte jurídico completo da ESM Advocacia.",
       );
     }
   }, []);
@@ -38,14 +38,14 @@ const BentoRibeiroProperty = () => {
               Apartamento residencial em Bento Ribeiro
             </span>
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              Apto 52 m2 reformado, funcional e pronto para morar
+              Apto 52 m² reformado, funcional e pronto para morar
             </h1>
             <p className="max-w-3xl text-lg text-[#ffffff]/80 md:text-xl">
-              Solucao ideal para quem busca praticidade no dia a dia, com condominio acessivel e localizacao estrategica na Zona Norte do Rio.
+              Solução ideal para quem busca praticidade no dia a dia, com condomínio acessível e localização estratégica na Zona Norte do Rio.
             </p>
             <div className="flex flex-wrap items-center gap-3 text-sm text-[#ffffff]/85">
               <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Valor de venda: R$ 149.900,00</span>
-              <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Condominio: R$ 355,00</span>
+              <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Condomínio: R$ 355,00</span>
               <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">IPTU: isento</span>
             </div>
           </div>
@@ -83,10 +83,10 @@ const BentoRibeiroProperty = () => {
 
       <section className="container mx-auto grid gap-8 px-4 pb-16 md:grid-cols-[1.3fr_1fr] md:px-6">
         <div className="space-y-6 rounded-2xl border border-[#091f1a]/10 bg-[#ffffff] p-7">
-          <h2 className="text-3xl font-bold">Ficha do imovel</h2>
+          <h2 className="text-3xl font-bold">Ficha do imóvel</h2>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
-              { icon: Ruler, label: "Area util", value: "52 m2" },
+              { icon: Ruler, label: "Área útil", value: "52 m²" },
               { icon: BedDouble, label: "Quartos", value: "2" },
               { icon: Bath, label: "Banheiro", value: "1" },
               { icon: CarFront, label: "Vaga", value: "0" },
@@ -106,7 +106,7 @@ const BentoRibeiroProperty = () => {
           <div className="rounded-xl bg-[#f7faf8] p-5">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.16em] text-[#0b8767]">Diferenciais</p>
             <div className="grid gap-2 text-sm text-[#091f1a]/80 sm:grid-cols-2">
-              {["Aceita animais", "Area de servico", "Condominio fechado", "Portao eletronico", "Imovel regularizado", "Pronto para morar"].map((feature) => (
+              {["Aceita animais", "Área de serviço", "Condomínio fechado", "Portão eletrônico", "Imóvel regularizado", "Pronto para morar"].map((feature) => (
                 <p key={feature} className="inline-flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-[#f5af00]" />
                   {feature}
@@ -117,32 +117,32 @@ const BentoRibeiroProperty = () => {
         </div>
 
         <aside className="h-fit rounded-2xl border border-[#091f1a]/10 bg-[linear-gradient(145deg,#091f1a_0%,#0f3028_50%,#123d33_100%)] p-7 text-[#ffffff]">
-          <p className="mb-2 text-sm uppercase tracking-[0.16em] text-[#f5af00]">Atendimento rapido</p>
+          <p className="mb-2 text-sm uppercase tracking-[0.16em] text-[#f5af00]">Atendimento rápido</p>
           <h3 className="mb-3 text-2xl font-bold">Agende sua visita hoje</h3>
           <p className="mb-6 text-[#ffffff]/80">
-            Fale agora com nosso time e receba atendimento completo para conhecer este apartamento e avancar com seguranca na negociacao.
+            Fale agora com nosso time e receba atendimento completo para conhecer este apartamento e avançar com segurança na negociação.
           </p>
           <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
             <Button className="w-full bg-[#f5af00] text-[#091f1a] hover:bg-[#d99a00]">
-              Quero visitar este imovel <MessageCircle className="ml-2 h-4 w-4" />
+              Quero visitar este imóvel <MessageCircle className="ml-2 h-4 w-4" />
             </Button>
           </a>
           <p className="mt-4 inline-flex items-center gap-2 text-xs text-[#ffffff]/70">
             <ShieldCheck className="h-4 w-4 text-[#f5af00]" />
-            Suporte juridico do primeiro contato ao fechamento.
+            Suporte jurídico do primeiro contato ao fechamento.
           </p>
         </aside>
       </section>
 
       <section className="container mx-auto px-4 pb-16 md:px-6">
         <div className="rounded-2xl border border-[#091f1a]/10 bg-[#ffffff] p-7 md:p-9">
-          <h2 className="text-2xl font-bold md:text-3xl">Apartamento a venda em Bento Ribeiro com seguranca juridica</h2>
+          <h2 className="text-2xl font-bold md:text-3xl">Apartamento à venda em Bento Ribeiro com segurança jurídica</h2>
           <p className="mt-4 text-[#091f1a]/75">
-            Este apartamento residencial em Bento Ribeiro, Rio de Janeiro, e uma opcao competitiva para quem busca imovel pronto para morar com custo mensal controlado.
-            A localizacao na Estrada Henrique de Melo favorece deslocamentos e acesso a comercio, servicos e mobilidade urbana da Zona Norte.
+            Este apartamento residencial em Bento Ribeiro, Rio de Janeiro, é uma opção competitiva para quem busca imóvel pronto para morar com custo mensal controlado.
+            A localização na Estrada Henrique de Melo favorece deslocamentos e acesso a comércio, serviços e mobilidade urbana da Zona Norte.
           </p>
           <p className="mt-3 text-[#091f1a]/75">
-            Para compradores e investidores, a ESM Advocacia oferece assessoria em due diligence imobiliaria, revisao contratual e validacao registral, com foco em reduzir riscos na compra e acelerar a conclusao do negocio.
+            Para compradores e investidores, a ESM Advocacia oferece assessoria em due diligence imobiliária, revisão contratual e validação registral, com foco em reduzir riscos na compra e acelerar a conclusão do negócio.
           </p>
         </div>
       </section>

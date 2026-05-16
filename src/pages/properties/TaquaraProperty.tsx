@@ -22,7 +22,7 @@ const TaquaraProperty = () => {
     if (metaDescription) {
       metaDescription.setAttribute(
         "content",
-        "Apartamento de 144 m2 na Taquara, Rio de Janeiro: 3 quartos, suite, varanda e suporte juridico da ESM Advocacia.",
+        "Apartamento de 144 m² na Taquara, Rio de Janeiro: 3 quartos, suíte, varanda e suporte jurídico da ESM Advocacia.",
       );
     }
   }, []);
@@ -38,14 +38,14 @@ const TaquaraProperty = () => {
               Apartamento premium na Taquara
             </span>
             <h1 className="text-4xl font-bold leading-tight md:text-6xl">
-              144 m2 de conforto, varanda ampla e vista panoramica
+              144 m² de conforto, varanda ampla e vista panorâmica
             </h1>
             <p className="max-w-3xl text-lg text-[#ffffff]/80 md:text-xl">
-              Um imovel espacoso para familias e investidores que buscam localizacao valorizada, planta generosa e excelente potencial de qualidade de vida.
+              Um imóvel espaçoso para famílias e investidores que buscam localização valorizada, planta generosa e excelente potencial de qualidade de vida.
             </p>
             <div className="flex flex-wrap items-center gap-3 text-sm text-[#ffffff]/85">
               <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Valor de venda: R$ 449.900,00</span>
-              <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Condominio: R$ 1.135,00</span>
+              <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">Condomínio: R$ 1.135,00</span>
               <span className="rounded-full border border-[#ffffff]/30 bg-[#ffffff]/10 px-3 py-1">IPTU: R$ 1.200,00</span>
             </div>
           </div>
@@ -83,10 +83,10 @@ const TaquaraProperty = () => {
 
       <section className="container mx-auto grid gap-8 px-4 pb-16 md:grid-cols-[1.3fr_1fr] md:px-6">
         <div className="space-y-6 rounded-2xl border border-[#091f1a]/10 bg-[#ffffff] p-7">
-          <h2 className="text-3xl font-bold">Ficha do imovel</h2>
+          <h2 className="text-3xl font-bold">Ficha do imóvel</h2>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
-              { icon: Ruler, label: "Area util", value: "144 m2" },
+              { icon: Ruler, label: "Área útil", value: "144 m²" },
               { icon: BedDouble, label: "Quartos", value: "3" },
               { icon: Bath, label: "Banheiros", value: "3" },
               { icon: CarFront, label: "Vaga", value: "1" },
@@ -109,12 +109,12 @@ const TaquaraProperty = () => {
               {[
                 "Aceita animais",
                 "Varanda",
-                "Vista panoramica",
+                "Vista panorâmica",
                 "Copa",
-                "Dependencia de empregados",
-                "Condominio com elevador",
+                "Dependência de empregados",
+                "Condomínio com elevador",
                 "Portaria 24h",
-                "Condominio fechado",
+                "Condomínio fechado",
               ].map((feature) => (
                 <p key={feature} className="inline-flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-[#f5af00]" />
@@ -126,19 +126,19 @@ const TaquaraProperty = () => {
         </div>
 
         <aside className="h-fit rounded-2xl border border-[#091f1a]/10 bg-[linear-gradient(145deg,#091f1a_0%,#0f3028_50%,#123d33_100%)] p-7 text-[#ffffff]">
-          <p className="mb-2 text-sm uppercase tracking-[0.16em] text-[#f5af00]">Atendimento rapido</p>
+          <p className="mb-2 text-sm uppercase tracking-[0.16em] text-[#f5af00]">Atendimento rápido</p>
           <h3 className="mb-3 text-2xl font-bold">Solicite uma visita exclusiva</h3>
           <p className="mb-6 text-[#ffffff]/80">
-            Converse com nosso time para conhecer o imovel, tirar duvidas e receber suporte juridico completo durante toda a negociacao.
+            Converse com nosso time para conhecer o imóvel, tirar dúvidas e receber suporte jurídico completo durante toda a negociação.
           </p>
           <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
             <Button className="w-full bg-[#f5af00] text-[#091f1a] hover:bg-[#d99a00]">
-              Quero visitar este imovel <MessageCircle className="ml-2 h-4 w-4" />
+              Quero visitar este imóvel <MessageCircle className="ml-2 h-4 w-4" />
             </Button>
           </a>
           <p className="mt-4 inline-flex items-center gap-2 text-xs text-[#ffffff]/70">
             <ShieldCheck className="h-4 w-4 text-[#f5af00]" />
-            Analise juridica e documental para sua seguranca.
+            Análise jurídica e documental para sua segurança.
           </p>
         </aside>
       </section>
@@ -147,12 +147,12 @@ const TaquaraProperty = () => {
         <div className="rounded-2xl border border-[#091f1a]/10 bg-[#ffffff] p-7 md:p-9">
           <h2 className="text-2xl font-bold md:text-3xl">Apartamento na Taquara para morar com conforto ou investir</h2>
           <p className="mt-4 text-[#091f1a]/75">
-            Este apartamento de 144 m2 na Taquara, Rio de Janeiro, oferece planta ampla, varanda e excelente distribuicao de ambientes.
-            A localizacao na Estrada Rodrigues Caldas conecta o imovel aos principais corredores de Jacarepagua e a uma rede consolidada de comercio, servicos e escolas.
+            Este apartamento de 144 m² na Taquara, Rio de Janeiro, oferece planta ampla, varanda e excelente distribuição de ambientes.
+            A localização na Estrada Rodrigues Caldas conecta o imóvel aos principais corredores de Jacarepaguá e a uma rede consolidada de comércio, serviços e escolas.
           </p>
           <p className="mt-3 text-[#091f1a]/75">
-            Com perfil ideal para familias e investidores, a negociacao pode ser conduzida com suporte juridico preventivo da ESM Advocacia,
-            incluindo analise documental, validacao de clausulas e acompanhamento ate o fechamento com maior previsibilidade.
+            Com perfil ideal para famílias e investidores, a negociação pode ser conduzida com suporte jurídico preventivo da ESM Advocacia,
+            incluindo análise documental, validação de cláusulas e acompanhamento até o fechamento com maior previsibilidade.
           </p>
         </div>
       </section>
