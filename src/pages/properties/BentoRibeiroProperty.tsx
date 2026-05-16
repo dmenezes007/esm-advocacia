@@ -2,18 +2,19 @@ import { useEffect } from "react";
 import { Bath, BedDouble, Building, CarFront, CheckCircle2, Home, MapPin, MessageCircle, Ruler, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import MobileWhatsAppBar from "@/components/ui/MobileWhatsAppBar";
+import PropertyPhotoSlider from "@/components/ui/PropertyPhotoSlider";
 
 const WHATSAPP_URL =
   "https://whatsa.me/5521981125585/?t=Ol%C3%A1!%20Estou%20interessado%20no%20im%C3%B3vel%20da%20Estrada%20Henrique%20de%20Melo,%20em%20Bento%20Ribeiro";
 
-const images = [
-  new URL("../../../imoveis/bento-ribeiro/sala_foto1.jpg", import.meta.url).href,
-  new URL("../../../imoveis/bento-ribeiro/sala_foto2.jpg", import.meta.url).href,
-  new URL("../../../imoveis/bento-ribeiro/cozinha_foto1.jpg", import.meta.url).href,
-  new URL("../../../imoveis/bento-ribeiro/quarto_casal_foto1.jpg", import.meta.url).href,
-  new URL("../../../imoveis/bento-ribeiro/quarto_solteiro_foto1.jpg", import.meta.url).href,
-  new URL("../../../imoveis/bento-ribeiro/banheiro_foto1.jpg", import.meta.url).href,
-];
+const imageModules = import.meta.glob("../../../imoveis/bento-ribeiro/*.{jpg,jpeg,png,JPG,JPEG,PNG}", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+const images = Object.entries(imageModules)
+  .sort(([a], [b]) => a.localeCompare(b, "pt-BR"))
+  .map(([, src]) => src);
 
 const BentoRibeiroProperty = () => {
   useEffect(() => {
@@ -53,32 +54,7 @@ const BentoRibeiroProperty = () => {
       </section>
 
       <section className="container mx-auto px-4 py-12 md:px-6 md:py-16">
-        <div className="grid gap-4 md:grid-cols-12">
-          <div className="md:col-span-8">
-            <img src={images[0]} alt="Sala do apartamento em Bento Ribeiro" className="h-80 w-full rounded-2xl object-cover md:h-[520px]" />
-          </div>
-          <div className="grid gap-4 sm:grid-cols-2 md:col-span-4 md:grid-cols-1">
-            {images.slice(1, 3).map((image, index) => (
-              <img
-                key={image}
-                src={image}
-                alt={`Ambiente ${index + 2} do apartamento em Bento Ribeiro`}
-                className="h-36 w-full rounded-2xl object-cover md:h-[252px]"
-              />
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-4 grid gap-4 sm:grid-cols-3">
-          {images.slice(3).map((image, index) => (
-            <img
-              key={image}
-              src={image}
-              alt={`Detalhe ${index + 4} do apartamento em Bento Ribeiro`}
-              className="h-48 w-full rounded-2xl object-cover"
-            />
-          ))}
-        </div>
+        <PropertyPhotoSlider images={images} altPrefix="Apartamento em Bento Ribeiro" />
       </section>
 
       <section className="container mx-auto grid gap-8 px-4 pb-16 md:grid-cols-[1.3fr_1fr] md:px-6">
