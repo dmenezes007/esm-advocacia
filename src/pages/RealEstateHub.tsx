@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const bentoCover = new URL("../../imoveis/bento-ribeiro/sala_foto1.jpg", import.meta.url).href;
-const taquaraCover = new URL("../../imoveis/taquara/894020836-742.63934051442965andar0001-processed.jpg", import.meta.url).href;
+const taquaraCover = new URL("../../imoveis/taquara/894020836-397.762605060700935andar0040-processed.jpg", import.meta.url).href;
 
 const listings = [
   {
